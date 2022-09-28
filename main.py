@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image
-from brainlife_apps_helper import helper
+
 
 # Current path
 __location__ = os.path.realpath(
