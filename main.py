@@ -47,7 +47,7 @@ mne.write_proj('out_dir/heartbeat-proj.fif', ecg_projs)
 
 # == FIGURES ==
 plt.figure(1)
-mne.viz.plot_projs_topomap(ecg_projs, info=raw.info)
+fig_ep = mne.viz.plot_projs_topomap(ecg_projs, info=raw.info)
 fig_ep.savefig(os.path.join('out_figs','ecg_projectors.png'))
 
 
