@@ -43,7 +43,7 @@ ecg_projs, ecg_events = mne.preprocessing.compute_proj_ecg(raw, None, config['tm
 
 
 
-mne.write_proj('out_dir/heartbeat-proj.fif', ecg_projs)
+mne.write_proj('out_dir/proj.fif', ecg_projs)
 
 # == FIGURES ==
 plt.figure(1)
