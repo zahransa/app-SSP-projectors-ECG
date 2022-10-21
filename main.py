@@ -50,5 +50,18 @@ plt.figure(1)
 fig_ep = mne.viz.plot_projs_topomap(ecg_projs, info=raw.info)
 fig_ep.savefig(os.path.join('out_figs','ecg_projectors.png'))
 
+plt.figure(2)
+ecg_evoked = mne.preprocessing.create_ecg_epochs(raw).average()
+e=ecg_evoked.plot_joint(picks='mag')
+e.savefig(os.path.join('out_figs','meg.png'))
+
+plt.figure(3)
+e=ecg_evoked.plot_joint(picks='grad')
+e.savefig(os.path.join('out_figs','grad.png'))
+
+plt.figure(4)
+e=ecg_evoked.plot_joint(picks='eeg')
+e.savefig(os.path.join('out_figs','eeg.png'))
+
 
 
