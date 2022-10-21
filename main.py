@@ -45,6 +45,8 @@ ecg_projs, ecg_events = mne.preprocessing.compute_proj_ecg(raw, None, config['tm
 
 mne.write_proj('out_dir/proj.fif', ecg_projs)
 
+ecg_projs = ecg_projs[3:]
+
 # == FIGURES ==
 plt.figure(1)
 fig_ep = mne.viz.plot_projs_topomap(ecg_projs, info=raw.info)
@@ -64,6 +66,11 @@ e.savefig(os.path.join('out_figs','grad.png'))
 plt.figure(4)
 e=ecg_evoked.plot_joint(picks='eeg')
 e.savefig(os.path.join('out_figs','eeg.png'))
+
+plt.figure(5)
+fig = mne.viz.plot_projs_joint(ecg_projs, ecg_evoked, picks_trace='MEG 0111')
+fig.suptitle('ECG projectors')
+fig.savefig(os.path.join('out_figs','joint-plot.png'))
 
 
 
