@@ -6,10 +6,10 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.530-blue.svg)](https://doi.org/10.25663/brainlife.app.530)
 
-Brainlife App to compute SSP (signal-space projection) vectors for EOG artifacts `mne.preprocessing.compute_proj_eog` function.
 
-This is the repository of a Brainlife App using [compute_proj_ecg](https://mne.tools/stable/generated/mne.preprocessing.compute_proj_ecg.html#mne.preprocessing.compute_proj_ecg).
-to compute SSP (signal-space projection) vectors for ECG artifacts 
+
+This is the repository of a Brainlife App to compute SSP (signal-space projection) vectors for ECG artifacts using [compute_proj_ecg](https://mne.tools/stable/generated/mne.preprocessing.compute_proj_ecg.html#mne.preprocessing.compute_proj_ecg).
+
 ## app-SSP-projectors-ECG
 
 
