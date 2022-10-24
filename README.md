@@ -8,6 +8,8 @@
 
 Brainlife App to compute SSP (signal-space projection) vectors for EOG artifacts `mne.preprocessing.compute_proj_eog` function.
 
+This is the repository of a Brainlife App using [compute_proj_ecg](https://mne.tools/stable/generated/mne.preprocessing.compute_proj_ecg.html#mne.preprocessing.compute_proj_ecg).
+to compute SSP (signal-space projection) vectors for ECG artifacts 
 ## app-SSP-projectors-ECG
 
 
