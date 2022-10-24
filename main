@@ -10,7 +10,7 @@ set -e
 mkdir -p out_dir
 mkdir -p out_figs
 
-singularity exec docker://brainlife/mne:1.0.2 python3 main.py
+singularity exec docker://brainlife/mne:1.2.1 python3 main.py
 
 
 cat << EOF > product.json
