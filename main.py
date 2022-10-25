@@ -67,10 +67,7 @@ plt.figure(4)
 e=ecg_evoked.plot_joint(picks='eeg')
 e.savefig(os.path.join('out_figs','eeg.png'))
 
-plt.figure(5)
-fig = mne.viz.plot_projs_joint(ecg_projs, ecg_evoked, picks_trace='MEG 0111')
-fig.suptitle('ECG projectors')
-fig.savefig(os.path.join('out_figs','joint-plot.png'))
+
 
 
 
